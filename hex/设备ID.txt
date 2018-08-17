@@ -1,0 +1,24 @@
+MARINE_REEF_500      0x0121                  //Strip III Marine
+MARINE_REEF_800      0x0122
+MARINE_REEF_1100     0x0123
+MARINE_REEF_1000     0x0124
+PLANT_FRESH_500      0x0131                  //Strip III Plant
+PLANT_FRESH_800      0x0132
+PLANT_FRESH_1100     0x0133
+PLANT_FRESH_1000     0x0134
+NANO_MARINE          0x0151                  //Wing Nano Marine
+NANO_PLANT           0x0152                  //Wing Nano Plant
+BLUE_500             0x0161                  //Strip III Blue
+BLUE_800             0x0162
+BLUE_1100            0x0163
+BLUE_1000            0x0164
+AQUASKY_600          0x0141                  //Aquasky II
+AQUASKY_900          0x0142
+AQUASKY_1200         0x0143
+AQUASKY_380          0x0144
+AQUASKY_530          0x0145
+AQUASKY_835          0x0146
+AQUASKY_990          0x0147
+AQUASKY_750          0x0148
+AQUASKY_1150         0x0149
+AQUASKY_910          0x0150

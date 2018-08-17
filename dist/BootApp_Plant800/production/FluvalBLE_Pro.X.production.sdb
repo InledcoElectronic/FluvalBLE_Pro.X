@@ -1,0 +1,1790 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PIC14E SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18345 ]
+[d frameptr 6 ]
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_key.c
+[e E8166 _key_state `uc
+KEY_STATE_SHORT_PRESS 0
+KEY_STATE_LONG_PRESS 1
+KEY_STATE_CONT_PRESS 2
+KEY_STATE_RELEASE 3
+]
+"107 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[e E8242 _key_state `uc
+KEY_STATE_SHORT_PRESS 0
+KEY_STATE_LONG_PRESS 1
+KEY_STATE_CONT_PRESS 2
+KEY_STATE_RELEASE 3
+]
+"122 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[e E8246 _key_state `uc
+KEY_STATE_SHORT_PRESS 0
+KEY_STATE_LONG_PRESS 1
+KEY_STATE_CONT_PRESS 2
+KEY_STATE_RELEASE 3
+]
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 D:\Program Files\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 D:\Program Files\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+"4 D:\Program Files\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"44 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _ble_send_cmd ble_send_cmd `(uc  1 s 1 ble_send_cmd ]
+"85
+[v _ble_check_devid ble_check_devid `(uc  1 s 1 ble_check_devid ]
+"122
+[v _ble_transmit_start ble_transmit_start `(v  1 s 1 ble_transmit_start ]
+"128
+[v _ble_transmit_stop ble_transmit_stop `(v  1 s 1 ble_transmit_stop ]
+"135
+[v _ble_ready_to_receive ble_ready_to_receive `(uc  1 e 1 0 ]
+"144
+[v _ble_receive_start ble_receive_start `(v  1 e 1 0 ]
+"152
+[v _ble_receive_complete ble_receive_complete `(uc  1 e 1 0 ]
+"161
+[v _ble_receive_stop ble_receive_stop `(v  1 e 1 0 ]
+"167
+[v _ble_process ble_process `(v  1 e 1 0 ]
+"180
+[v _ble_init ble_init `(v  1 e 1 0 ]
+"204
+[v _ble_send_data ble_send_data `(v  1 s 1 ble_send_data ]
+"262
+[v _ble_ota_ack ble_ota_ack `(v  1 s 1 ble_ota_ack ]
+"273
+[v _ble_receive ble_receive `(v  1 e 1 0 ]
+"284
+[v _ble_decode ble_decode `(v  1 s 1 ble_decode ]
+"5 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_key.c
+[v _key_init key_init `(v  1 e 1 0 ]
+"10
+[v _key_read key_read `(uc  1 s 1 key_read ]
+"20
+[v _key_action key_action `(v  1 s 1 key_action ]
+"28
+[v _key_scan key_scan `(v  1 e 1 0 ]
+"170 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_para_default led_para_default `(v  1 s 1 led_para_default ]
+"236
+[v _led_para_init led_para_init `(v  1 s 1 led_para_init ]
+"453
+[v _led_init led_init `(v  1 e 1 0 ]
+"458
+[v _led_calc_bright led_calc_bright `(ui  1 s 2 led_calc_bright ]
+"477
+[v _led_ramp led_ramp `(v  1 e 1 0 ]
+"497
+[v _led_process led_process `(v  1 e 1 0 ]
+"513
+[v _led_auto_process led_auto_process `(v  1 s 1 led_auto_process ]
+"594
+[v _led_pro_process led_pro_process `(v  1 s 1 led_pro_process ]
+"675
+[v _led_turnon_ramp led_turnon_ramp `(v  1 s 1 led_turnon_ramp ]
+"683
+[v _led_turnoff_ramp led_turnoff_ramp `(v  1 s 1 led_turnoff_ramp ]
+"691
+[v _led_turnon_max led_turnon_max `(v  1 s 1 led_turnon_max ]
+"700
+[v _led_turnoff led_turnoff `(v  1 s 1 led_turnoff ]
+[v i1_led_turnoff led_turnoff `(v  1 s 1 i1_led_turnoff ]
+"710
+[v _led_indicate_off led_indicate_off `(v  1 s 1 led_indicate_off ]
+[v i1_led_indicate_off led_indicate_off `(v  1 s 1 i1_led_indicate_off ]
+"717
+[v _led_indicate_day led_indicate_day `(v  1 s 1 led_indicate_day ]
+[v i1_led_indicate_day led_indicate_day `(v  1 s 1 i1_led_indicate_day ]
+"724
+[v _led_indicate_night led_indicate_night `(v  1 s 1 led_indicate_night ]
+[v i1_led_indicate_night led_indicate_night `(v  1 s 1 i1_led_indicate_night ]
+"731
+[v _led_indicate_ble led_indicate_ble `(v  1 s 1 led_indicate_ble ]
+[v i1_led_indicate_ble led_indicate_ble `(v  1 s 1 i1_led_indicate_ble ]
+"738
+[v _led_update_day_bright led_update_day_bright `(v  1 s 1 led_update_day_bright ]
+[v i1_led_update_day_bright led_update_day_bright `(v  1 s 1 i1_led_update_day_bright ]
+"748
+[v _led_update_day_status led_update_day_status `(v  1 s 1 led_update_day_status ]
+"760
+[v _led_update_night_bright led_update_night_bright `(v  1 s 1 led_update_night_bright ]
+[v i1_led_update_night_bright led_update_night_bright `(v  1 s 1 i1_led_update_night_bright ]
+"779
+[v _led_update_night_status led_update_night_status `(v  1 s 1 led_update_night_status ]
+"793
+[v _led_state_off_short_press_cb led_state_off_short_press_cb `(v  1 s 1 led_state_off_short_press_cb ]
+"801
+[v _led_state_off_long_press_cb led_state_off_long_press_cb `(v  1 s 1 led_state_off_long_press_cb ]
+"810
+[v _led_state_off_cont_press_cb led_state_off_cont_press_cb `(v  1 s 1 led_state_off_cont_press_cb ]
+"812
+[v _led_state_off_release_cb led_state_off_release_cb `(v  1 s 1 led_state_off_release_cb ]
+"814
+[v _led_state_off_cb led_state_off_cb `(v  1 s 1 led_state_off_cb ]
+"840
+[v _led_state_day_short_press_cb led_state_day_short_press_cb `(v  1 s 1 led_state_day_short_press_cb ]
+"848
+[v _led_state_day_long_press_cb led_state_day_long_press_cb `(v  1 s 1 led_state_day_long_press_cb ]
+"853
+[v _led_state_day_cont_press_cb led_state_day_cont_press_cb `(v  1 s 1 led_state_day_cont_press_cb ]
+"866
+[v _led_state_day_release_cb led_state_day_release_cb `(v  1 s 1 led_state_day_release_cb ]
+"871
+[v _led_state_day_cb led_state_day_cb `(v  1 s 1 led_state_day_cb ]
+"897
+[v _led_state_night_short_press_cb led_state_night_short_press_cb `(v  1 s 1 led_state_night_short_press_cb ]
+"912
+[v _led_state_night_long_press_cb led_state_night_long_press_cb `(v  1 s 1 led_state_night_long_press_cb ]
+"917
+[v _led_state_night_cont_press_cb led_state_night_cont_press_cb `(v  1 s 1 led_state_night_cont_press_cb ]
+"930
+[v _led_state_night_release_cb led_state_night_release_cb `(v  1 s 1 led_state_night_release_cb ]
+"935
+[v _led_state_night_cb led_state_night_cb `(v  1 s 1 led_state_night_cb ]
+"960
+[v _led_state_ble_short_press_cb led_state_ble_short_press_cb `(v  1 s 1 led_state_ble_short_press_cb ]
+"968
+[v _led_state_ble_long_press_cb led_state_ble_long_press_cb `(v  1 s 1 led_state_ble_long_press_cb ]
+"970
+[v _led_state_ble_cont_press_cb led_state_ble_cont_press_cb `(v  1 s 1 led_state_ble_cont_press_cb ]
+"972
+[v _led_state_ble_release_cb led_state_ble_release_cb `(v  1 s 1 led_state_ble_release_cb ]
+"974
+[v _led_state_ble_cb led_state_ble_cb `(v  1 s 1 led_state_ble_cb ]
+"997
+[v _led_touch_cb led_touch_cb `(v  1 e 1 0 ]
+"1862
+[v _led_start_flash led_start_flash `(v  1 e 1 0 ]
+"1868
+[v _led_find_device led_find_device `(v  1 s 1 led_find_device ]
+"1893
+[v _led_start_preview led_start_preview `(v  1 e 1 0 ]
+"1899
+[v _led_stop_preview led_stop_preview `(v  1 e 1 0 ]
+"1905
+[v _led_preview led_preview `(v  1 s 1 led_preview ]
+"1919
+[v _led_prepare_to_save led_prepare_to_save `(v  1 s 1 led_prepare_to_save ]
+[v i1_led_prepare_to_save led_prepare_to_save `(v  1 s 1 i1_led_prepare_to_save ]
+"1925
+[v _led_save_para led_save_para `(v  1 s 1 led_save_para ]
+"1939
+[v _led_second_cb led_second_cb `(v  1 e 1 0 ]
+"1993
+[v _led_set_mode led_set_mode `(uc  1 e 1 0 ]
+"2036
+[v _led_set_power led_set_power `(uc  1 e 1 0 ]
+"2070
+[v _led_set_bright led_set_bright `(uc  1 e 1 0 ]
+"2094
+[v _led_set_custom led_set_custom `(uc  1 e 1 0 ]
+"2118
+[v _led_set_cycle led_set_cycle `(uc  1 e 1 0 ]
+"2133
+[v _led_set_pro led_set_pro `(uc  1 e 1 0 ]
+"2148
+[v _led_increase led_increase `(uc  1 e 1 0 ]
+"2166
+[v _led_decrease led_decrease `(uc  1 e 1 0 ]
+"2184
+[v _led_set_preview led_set_preview `(uc  1 e 1 0 ]
+"2206
+[v _led_set_time led_set_time `(v  1 e 1 0 ]
+"23 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _osc_init osc_init `(v  1 e 1 0 ]
+"38
+[v _gpio_init gpio_init `(v  1 e 1 0 ]
+"92
+[v _tmr2_isr_callback tmr2_isr_callback `(v  1 e 1 0 ]
+"109
+[v _app_init app_init `(v  1 e 1 0 ]
+"129
+[v _app_isr app_isr `II(v  1 e 1 0 ]
+"149
+[v _main main `(v  1 e 1 0 ]
+"22 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _rtc_is_leap_year rtc_is_leap_year `(uc  1 s 1 rtc_is_leap_year ]
+"41
+[v _rtc_init rtc_init `(v  1 e 1 0 ]
+"52
+[v _rtc_process rtc_process `(v  1 e 1 0 ]
+"100
+[v _rtc_second_ready rtc_second_ready `(uc  1 e 1 0 ]
+"110
+[v _rtc_set rtc_set `(v  1 e 1 0 ]
+"140
+[v _rtc_get_hour rtc_get_hour `(uc  1 e 1 0 ]
+"145
+[v _rtc_get_minute rtc_get_minute `(uc  1 e 1 0 ]
+"150
+[v _rtc_get_second rtc_get_second `(uc  1 e 1 0 ]
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_util.c
+[v _increase increase `(v  1 e 1 0 ]
+[v i1_increase increase `(v  1 e 1 0 ]
+"15
+[v _decrease decrease `(v  1 e 1 0 ]
+[v i1_decrease decrease `(v  1 e 1 0 ]
+"5 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eeprom.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"24
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"35
+[v _eeprom_write_buffer eeprom_write_buffer `(v  1 e 1 0 ]
+"43
+[v _eeprom_read_buffer eeprom_read_buffer `(v  1 e 1 0 ]
+"12 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eusart.c
+[v _eusart_init eusart_init `(v  1 e 1 0 ]
+"30
+[v _eusart_write eusart_write `(uc  1 e 1 0 ]
+"52
+[v _eusart_transmit_isr eusart_transmit_isr `(v  1 e 1 0 ]
+"69
+[v _eusart_receive_isr eusart_receive_isr `(v  1 e 1 0 ]
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_pwm.c
+[v _pwm1_init pwm1_init `(v  1 e 1 0 ]
+"18
+[v _pwm1_load_duty pwm1_load_duty `(v  1 e 1 0 ]
+"25
+[v _pwm2_init pwm2_init `(v  1 e 1 0 ]
+"40
+[v _pwm2_load_duty pwm2_load_duty `(v  1 e 1 0 ]
+"47
+[v _pwm3_init pwm3_init `(v  1 e 1 0 ]
+"62
+[v _pwm3_load_duty pwm3_load_duty `(v  1 e 1 0 ]
+"69
+[v _pwm4_init pwm4_init `(v  1 e 1 0 ]
+"84
+[v _pwm4_load_duty pwm4_load_duty `(v  1 e 1 0 ]
+"91
+[v _pwm5_init pwm5_init `(v  1 e 1 0 ]
+"99
+[v _pwm5_load_duty pwm5_load_duty `(v  1 e 1 0 ]
+"6 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_tmr.c
+[v _tmr0_init tmr0_init `(v  1 e 1 0 ]
+"29
+[v _tmr0_isr tmr0_isr `(v  1 e 1 0 ]
+"38
+[v _tmr2_init tmr2_init `(v  1 e 1 0 ]
+"58
+[v _tmr2_isr tmr2_isr `(v  1 e 1 0 ]
+[s S227 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"362 D:\Program Files\Microchip\xc8\v1.45\include\pic16f18345.h
+[u S232 . 1 `S227 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES232  1 e 1 @11 ]
+[s S588 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"397
+[u S595 . 1 `S588 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES595  1 e 1 @12 ]
+"471
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+[s S24 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"546
+[u S29 . 1 `S24 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES29  1 e 1 @16 ]
+[s S53 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"583
+[u S62 . 1 `S53 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES62  1 e 1 @17 ]
+"814
+[v _TMR0L TMR0L `VEuc  1 e 1 @21 ]
+"952
+[v _TMR0H TMR0H `VEuc  1 e 1 @22 ]
+"1106
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @23 ]
+[s S1680 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"1126
+[s S1686 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S1691 . 1 `S1680 1 . 1 0 `S1686 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1691  1 e 1 @23 ]
+"1171
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @24 ]
+"1437
+[v _TMR2 TMR2 `VEuc  1 e 1 @29 ]
+"1457
+[v _PR2 PR2 `VEuc  1 e 1 @30 ]
+"1477
+[v _T2CON T2CON `VEuc  1 e 1 @31 ]
+[s S1706 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1498
+[s S1710 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S1718 . 1 `S1706 1 . 1 0 `S1710 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1718  1 e 1 @31 ]
+"1548
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1593
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1632
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S37 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1707
+[u S42 . 1 `S37 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES42  1 e 1 @144 ]
+[s S74 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1744
+[u S83 . 1 `S74 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES83  1 e 1 @145 ]
+"2291
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S1115 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"2306
+[u S1122 . 1 `S1115 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1122  1 e 1 @268 ]
+"2336
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S609 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2350
+[u S615 . 1 `S609 1 . 1 0 ]
+[v _LATBbits LATBbits `VES615  1 e 1 @269 ]
+"2375
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S546 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2392
+[u S555 . 1 `S546 1 . 1 0 ]
+[v _LATCbits LATCbits `VES555  1 e 1 @270 ]
+"2930
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2975
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3014
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3102
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3160
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3212
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"3282
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"3336
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S322 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3362
+[u S331 . 1 `S322 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES331  1 e 1 @413 ]
+"3471
+[v _RCSTAbits RCSTAbits `VES331  1 e 1 @413 ]
+"3516
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S567 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3651
+[u S576 . 1 `S567 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES576  1 e 1 @414 ]
+"3696
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"3942
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3992
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4031
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"6199
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"6244
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"6283
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6352
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"6372
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"6392
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"6510
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @661 ]
+"6530
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @662 ]
+"6550
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @663 ]
+[s S136 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"6684
+[s S141 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S150 . 1 `S136 1 . 1 0 `S141 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES150  1 e 1 @671 ]
+"6902
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"6922
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
+"6942
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"7060
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @789 ]
+"7080
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @790 ]
+"7100
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @791 ]
+"8930
+[v _PWM5DCL PWM5DCL `VEuc  1 e 1 @1559 ]
+"8966
+[v _PWM5DCH PWM5DCH `VEuc  1 e 1 @1560 ]
+"9036
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @1561 ]
+[s S179 . 1 `uc 1 P5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+]
+"9291
+[s S182 . 1 `uc 1 P5TSEL0 1 0 :1:0 
+`uc 1 P5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+]
+[u S187 . 1 `S179 1 . 1 0 `S182 1 . 1 0 ]
+[v _PWMTMRSbits PWMTMRSbits `VES187  1 e 1 @1567 ]
+"10800
+[v _NVMADR NVMADR `VEus  1 e 2 @2193 ]
+"10816
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @2193 ]
+"11068
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @2194 ]
+"11318
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @2195 ]
+"11786
+[v _NVMCON1 NVMCON1 `VEuc  1 e 1 @2197 ]
+[s S243 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 NVMREGS 1 0 :1:6 
+]
+"11815
+[s S251 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CFGS 1 0 :1:6 
+]
+[u S254 . 1 `S243 1 . 1 0 `S251 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES254  1 e 1 @2197 ]
+"11975
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2198 ]
+"12486
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"12626
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"12723
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"12769
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"12827
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"12873
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S1456 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"12883
+[u S1458 . 1 `S1456 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES1458  1 e 1 @3599 ]
+[s S1463 . 1 `uc 1 RXPPS 1 0 :5:0 
+]
+"13898
+[s S1465 . 1 `uc 1 RXDTPPS0 1 0 :1:0 
+`uc 1 RXDTPPS1 1 0 :1:1 
+`uc 1 RXDTPPS2 1 0 :1:2 
+`uc 1 RXDTPPS3 1 0 :1:3 
+`uc 1 RXDTPPS4 1 0 :1:4 
+]
+[u S1471 . 1 `S1463 1 . 1 0 `S1465 1 . 1 0 ]
+[v _RXPPSbits RXPPSbits `VES1471  1 e 1 @3620 ]
+[s S1483 . 1 `uc 1 RB4PPS 1 0 :5:0 
+]
+"14550
+[s S1485 . 1 `uc 1 RB4PPS0 1 0 :1:0 
+`uc 1 RB4PPS1 1 0 :1:1 
+`uc 1 RB4PPS2 1 0 :1:2 
+`uc 1 RB4PPS3 1 0 :1:3 
+`uc 1 RB4PPS4 1 0 :1:4 
+]
+[u S1491 . 1 `S1483 1 . 1 0 `S1485 1 . 1 0 ]
+[v _RB4PPSbits RB4PPSbits `VES1491  1 e 1 @3740 ]
+[s S1543 . 1 `uc 1 RC3PPS 1 0 :5:0 
+]
+"14914
+[s S1545 . 1 `uc 1 RC3PPS0 1 0 :1:0 
+`uc 1 RC3PPS1 1 0 :1:1 
+`uc 1 RC3PPS2 1 0 :1:2 
+`uc 1 RC3PPS3 1 0 :1:3 
+`uc 1 RC3PPS4 1 0 :1:4 
+]
+[u S1551 . 1 `S1543 1 . 1 0 `S1545 1 . 1 0 ]
+[v _RC3PPSbits RC3PPSbits `VES1551  1 e 1 @3747 ]
+[s S1523 . 1 `uc 1 RC4PPS 1 0 :5:0 
+]
+"14966
+[s S1525 . 1 `uc 1 RC4PPS0 1 0 :1:0 
+`uc 1 RC4PPS1 1 0 :1:1 
+`uc 1 RC4PPS2 1 0 :1:2 
+`uc 1 RC4PPS3 1 0 :1:3 
+`uc 1 RC4PPS4 1 0 :1:4 
+]
+[u S1531 . 1 `S1523 1 . 1 0 `S1525 1 . 1 0 ]
+[v _RC4PPSbits RC4PPSbits `VES1531  1 e 1 @3748 ]
+[s S1503 . 1 `uc 1 RC5PPS 1 0 :5:0 
+]
+"15018
+[s S1505 . 1 `uc 1 RC5PPS0 1 0 :1:0 
+`uc 1 RC5PPS1 1 0 :1:1 
+`uc 1 RC5PPS2 1 0 :1:2 
+`uc 1 RC5PPS3 1 0 :1:3 
+`uc 1 RC5PPS4 1 0 :1:4 
+]
+[u S1511 . 1 `S1503 1 . 1 0 `S1505 1 . 1 0 ]
+[v _RC5PPSbits RC5PPSbits `VES1511  1 e 1 @3749 ]
+[s S1563 . 1 `uc 1 RC6PPS 1 0 :5:0 
+]
+"15070
+[s S1565 . 1 `uc 1 RC6PPS0 1 0 :1:0 
+`uc 1 RC6PPS1 1 0 :1:1 
+`uc 1 RC6PPS2 1 0 :1:2 
+`uc 1 RC6PPS3 1 0 :1:3 
+`uc 1 RC6PPS4 1 0 :1:4 
+]
+[u S1571 . 1 `S1563 1 . 1 0 `S1565 1 . 1 0 ]
+[v _RC6PPSbits RC6PPSbits `VES1571  1 e 1 @3750 ]
+[s S1583 . 1 `uc 1 RC7PPS 1 0 :5:0 
+]
+"15122
+[s S1585 . 1 `uc 1 RC7PPS0 1 0 :1:0 
+`uc 1 RC7PPS1 1 0 :1:1 
+`uc 1 RC7PPS2 1 0 :1:2 
+`uc 1 RC7PPS3 1 0 :1:3 
+`uc 1 RC7PPS4 1 0 :1:4 
+]
+[u S1591 . 1 `S1583 1 . 1 0 `S1585 1 . 1 0 ]
+[v _RC7PPSbits RC7PPSbits `VES1591  1 e 1 @3751 ]
+"38 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _rx_buf rx_buf `[80]uc  1 s 80 rx_buf ]
+"39
+[v _index index `uc  1 s 1 index ]
+"40
+[v _checksum checksum `uc  1 s 1 checksum ]
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_key.c
+[v _key_func key_func `*.37(v  1 e 2 0 ]
+[s S625 . 32 `uc 1 mOn 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+`uc 1 mDyn 1 1 `[5]ui 1 mBright 10 2 `[4][5]uc 1 mCustomBright 20 12 ]
+"89 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[u S631 . 32 `S625 1 . 32 0 `[32]uc 1 array 32 0 ]
+[s S634 . 21 `uc 1 sunrise_start_hour 1 0 `uc 1 sunrise_start_minute 1 1 `uc 1 sunrise_end_hour 1 2 `uc 1 sunrise_end_minute 1 3 `[5]uc 1 day_bright 5 4 `uc 1 sunset_start_hour 1 9 `uc 1 sunset_start_minute 1 10 `uc 1 sunset_end_hour 1 11 `uc 1 sunset_end_minute 1 12 `[5]uc 1 night_bright 5 13 `uc 1 turnoff_enabled 1 18 `uc 1 turnoff_hour 1 19 `uc 1 turnoff_minute 1 20 ]
+[u S648 . 21 `S634 1 . 21 0 `[21]uc 1 array 21 0 ]
+[s S651 . 7 `uc 1 hour 1 0 `uc 1 minuite 1 1 `[5]uc 1 bright 5 2 ]
+[s S655 . 71 `uc 1 point_count 1 0 `[10]S651 1 points 70 1 ]
+[u S658 . 71 `S655 1 . 71 0 `[71]uc 1 array 71 0 ]
+[s S661 . 125 `uc 1 mMode 1 0 :2:0 
+`uc 1 . 1 0 :6:2 
+`S631 1 manual_para 32 1 `S648 1 auto_para 21 33 `S658 1 pro_para 71 54 ]
+[s S667 . 131 `uc 1 save_flag 1 0 `uc 1 mState 1 1 :2:0 
+`uc 1 last_mode 1 1 :2:2 
+`uc 1 . 1 1 :4:4 
+`ui 1 all_bright 2 2 `ui 1 blue_bright 2 4 `S661 1 ble_para 125 6 ]
+[v _m_led_para m_led_para `S667  1 e 131 @9069 ]
+[s S1016 . 4 `uc 1 mFind 1 0 :1:0 
+`uc 1 mPrev 1 0 :1:1 
+`uc 1 mSave 1 0 :1:2 
+`uc 1 mDr 1 0 :1:3 
+`uc 1 mNr 1 0 :1:4 
+`uc 1 . 1 0 :3:5 
+`uc 1 flash_count 1 1 `uc 1 prev_count 1 2 `uc 1 save_delay_count 1 3 ]
+"90
+[v _led_run_para led_run_para `S1016  1 e 4 0 ]
+"91
+[v _target_bright target_bright `[5]ui  1 e 10 0 ]
+"92
+[v _current_bright current_bright `[5]ui  1 e 10 0 ]
+"107
+[v _led_state_cb led_state_cb `[4]*.37(v  1 e 8 0 ]
+"129
+[v _led_load_duty led_load_duty `[5]*.37(v  1 s 10 led_load_duty ]
+"18 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _MONTH_DAY MONTH_DAY `[12]uc  1 e 12 0 ]
+[s S405 . 7 `uc 1 year 1 0 `uc 1 month 1 1 `uc 1 day 1 2 `uc 1 week 1 3 `uc 1 hour 1 4 `uc 1 minute 1 5 `uc 1 second 1 6 ]
+"19
+[u S413 . 7 `S405 1 . 7 0 `[7]uc 1 array 7 0 ]
+[v _m_current_time m_current_time `S413  1 s 7 m_current_time ]
+[s S416 . 1 `uc 1 fSec 1 0 :1:0 
+`uc 1 fMin 1 0 :1:1 
+`uc 1 fHour 1 0 :1:2 
+`uc 1 fWeek 1 0 :1:3 
+`uc 1 fDay 1 0 :1:4 
+`uc 1 fMon 1 0 :1:5 
+`uc 1 fYear 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+"20
+[v _rtc_status rtc_status `S416  1 s 1 rtc_status ]
+"5 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eusart.c
+[v _tx_tail tx_tail `uc  1 e 1 0 ]
+"6
+[v _tx_remain tx_remain `uc  1 e 1 0 ]
+"7
+[v _tx_head tx_head `uc  1 e 1 0 ]
+"8
+[v _tx_buf tx_buf `[64]uc  1 e 64 0 ]
+"10
+[v _eusart_rcv_cb eusart_rcv_cb `*.37(v  1 e 2 0 ]
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_tmr.c
+[v _tmr0_isr_cb tmr0_isr_cb `*.37(v  1 e 2 0 ]
+"4
+[v _tmr2_isr_cb tmr2_isr_cb `*.37(v  1 e 2 0 ]
+"149 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"169
+} 0
+"100 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _rtc_second_ready rtc_second_ready `(uc  1 e 1 0 ]
+{
+"108
+} 0
+"41
+[v _rtc_init rtc_init `(v  1 e 1 0 ]
+{
+"50
+} 0
+"1939 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_second_cb led_second_cb `(v  1 e 1 0 ]
+{
+"1941
+[v led_second_cb@ct ct `ui  1 a 2 1 ]
+"1942
+[v led_second_cb@sec sec `uc  1 a 1 0 ]
+"1991
+} 0
+"150 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _rtc_get_second rtc_get_second `(uc  1 e 1 0 ]
+{
+"153
+} 0
+"145
+[v _rtc_get_minute rtc_get_minute `(uc  1 e 1 0 ]
+{
+"148
+} 0
+"140
+[v _rtc_get_hour rtc_get_hour `(uc  1 e 1 0 ]
+{
+"143
+} 0
+"1925 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_save_para led_save_para `(v  1 s 1 led_save_para ]
+{
+"1937
+} 0
+"35 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eeprom.c
+[v _eeprom_write_buffer eeprom_write_buffer `(v  1 e 1 0 ]
+{
+[v eeprom_write_buffer@addr addr `uc  1 a 1 wreg ]
+"37
+[v eeprom_write_buffer@i i `uc  1 a 1 9 ]
+"35
+[v eeprom_write_buffer@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write_buffer@pbuf pbuf `*.39uc  1 p 2 5 ]
+[v eeprom_write_buffer@len len `uc  1 p 1 7 ]
+"37
+[v eeprom_write_buffer@addr addr `uc  1 a 1 8 ]
+"41
+} 0
+"5
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+"7
+[v eeprom_write@state state `uc  1 a 1 4 ]
+"5
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@byte byte `uc  1 p 1 2 ]
+"7
+[v eeprom_write@addr addr `uc  1 a 1 3 ]
+"22
+} 0
+"594 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_pro_process led_pro_process `(v  1 s 1 led_pro_process ]
+{
+"621
+[v led_pro_process@tmp tmp `uc  1 a 1 10 ]
+[s S651 . 7 `uc 1 hour 1 0 `uc 1 minuite 1 1 `[5]uc 1 bright 5 2 ]
+"616
+[v led_pro_process@p2 p2 `*.39S651  1 a 2 24 ]
+"615
+[v led_pro_process@p1 p1 `*.39S651  1 a 2 22 ]
+"618
+[v led_pro_process@t2 t2 `ui  1 a 2 13 ]
+"617
+[v led_pro_process@t1 t1 `ui  1 a 2 11 ]
+"606
+[v led_pro_process@index index `[10]uc  1 a 10 0 ]
+"634
+[v led_pro_process@dt dt `ul  1 a 4 15 ]
+"631
+[v led_pro_process@st st `ui  1 a 2 38 ]
+[s S651 . 7 `uc 1 hour 1 0 `uc 1 minuite 1 1 `[5]uc 1 bright 5 2 ]
+"630
+[v led_pro_process@ep ep `*.39S651  1 a 2 35 ]
+"629
+[v led_pro_process@sp sp `*.39S651  1 a 2 33 ]
+"632
+[v led_pro_process@et et `ui  1 a 2 31 ]
+"628
+[v led_pro_process@end end `ui  1 a 2 28 ]
+"627
+[v led_pro_process@start start `ui  1 a 2 26 ]
+"633
+[v led_pro_process@duration duration `ui  1 a 2 20 ]
+"605
+[v led_pro_process@i i `uc  1 a 1 40 ]
+[v led_pro_process@j j `uc  1 a 1 37 ]
+"604
+[v led_pro_process@point_count point_count `uc  1 a 1 30 ]
+"635
+[v led_pro_process@flag flag `uc  1 a 1 19 ]
+"594
+[v led_pro_process@ct ct `ui  1 p 2 42 ]
+[v led_pro_process@sec sec `uc  1 p 1 44 ]
+"673
+} 0
+"1905
+[v _led_preview led_preview `(v  1 s 1 led_preview ]
+{
+"1915
+} 0
+"1868
+[v _led_find_device led_find_device `(v  1 s 1 led_find_device ]
+{
+"1870
+[v led_find_device@toggle toggle `uc  1 s 1 toggle ]
+"1889
+} 0
+"691
+[v _led_turnon_max led_turnon_max `(v  1 s 1 led_turnon_max ]
+{
+"693
+[v led_turnon_max@i i `uc  1 a 1 2 ]
+"698
+} 0
+"513
+[v _led_auto_process led_auto_process `(v  1 s 1 led_auto_process ]
+{
+"529
+[v led_auto_process@val val `[6][5]uc  1 a 30 0 ]
+"522
+[v led_auto_process@tr tr `[6]ui  1 a 12 30 ]
+"519
+[v led_auto_process@dt dt `ul  1 a 4 45 ]
+[s S634 . 21 `uc 1 sunrise_start_hour 1 0 `uc 1 sunrise_start_minute 1 1 `uc 1 sunrise_end_hour 1 2 `uc 1 sunrise_end_minute 1 3 `[5]uc 1 day_bright 5 4 `uc 1 sunset_start_hour 1 9 `uc 1 sunset_start_minute 1 10 `uc 1 sunset_end_hour 1 11 `uc 1 sunset_end_minute 1 12 `[5]uc 1 night_bright 5 13 `uc 1 turnoff_enabled 1 18 `uc 1 turnoff_hour 1 19 `uc 1 turnoff_minute 1 20 ]
+"521
+[u S648 . 21 `S634 1 . 21 0 `[21]uc 1 array 21 0 ]
+[v led_auto_process@p p `*.39S648  1 a 2 55 ]
+"516
+[v led_auto_process@st st `ui  1 a 2 53 ]
+"517
+[v led_auto_process@et et `ui  1 a 2 50 ]
+"518
+[v led_auto_process@duration duration `ui  1 a 2 42 ]
+"515
+[v led_auto_process@i i `uc  1 a 1 57 ]
+[v led_auto_process@k k `uc  1 a 1 52 ]
+"520
+[v led_auto_process@count count `uc  1 a 1 49 ]
+"515
+[v led_auto_process@j j `uc  1 a 1 44 ]
+"513
+[v led_auto_process@ct ct `ui  1 p 2 42 ]
+[v led_auto_process@sec sec `uc  1 p 1 44 ]
+"592
+} 0
+"458
+[v _led_calc_bright led_calc_bright `(ui  1 s 2 led_calc_bright ]
+{
+[v led_calc_bright@sbrt sbrt `uc  1 a 1 wreg ]
+"463
+[v led_calc_bright@period period `ui  1 a 2 38 ]
+"462
+[v led_calc_bright@vs vs `ui  1 a 2 36 ]
+"461
+[v led_calc_bright@result result `ui  1 a 2 34 ]
+"460
+[v led_calc_bright@dbrt dbrt `uc  1 a 1 40 ]
+"458
+[v led_calc_bright@sbrt sbrt `uc  1 a 1 wreg ]
+[v led_calc_bright@ebrt ebrt `uc  1 p 1 27 ]
+[v led_calc_bright@duration duration `ui  1 p 2 28 ]
+[v led_calc_bright@dt dt `ul  1 p 4 30 ]
+"462
+[v led_calc_bright@sbrt sbrt `uc  1 a 1 41 ]
+"475
+} 0
+"15 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 10 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 2 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 6 ]
+"129
+} 0
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 22 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 26 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 14 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 18 ]
+"31
+} 0
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 7 ]
+[v ___awmod@counter counter `uc  1 a 1 6 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+[v ___awmod@dividend dividend `i  1 p 2 4 ]
+"35
+} 0
+"453 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_init led_init `(v  1 e 1 0 ]
+{
+"456
+} 0
+"236
+[v _led_para_init led_para_init `(v  1 s 1 led_para_init ]
+{
+"238
+[v led_para_init@i i `uc  1 a 1 31 ]
+[v led_para_init@j j `uc  1 a 1 30 ]
+"451
+} 0
+"760
+[v _led_update_night_bright led_update_night_bright `(v  1 s 1 led_update_night_bright ]
+{
+"762
+[v led_update_night_bright@i i `uc  1 a 1 6 ]
+"777
+} 0
+"738
+[v _led_update_day_bright led_update_day_bright `(v  1 s 1 led_update_day_bright ]
+{
+"740
+[v led_update_day_bright@i i `uc  1 a 1 6 ]
+"746
+} 0
+"700
+[v _led_turnoff led_turnoff `(v  1 s 1 led_turnoff ]
+{
+"702
+[v led_turnoff@i i `uc  1 a 1 2 ]
+"707
+} 0
+"170
+[v _led_para_default led_para_default `(v  1 s 1 led_para_default ]
+{
+"204
+[v led_para_default@j j `uc  1 a 1 19 ]
+"223
+[v led_para_default@i_1207 i `uc  1 a 1 21 ]
+"201
+[v led_para_default@i_1200 i `uc  1 a 1 20 ]
+"187
+[v led_para_default@i i `uc  1 a 1 18 ]
+"234
+} 0
+"8 D:\Program Files\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 8 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 2 ]
+[v memset@c c `i  1 p 2 4 ]
+[v memset@n n `ui  1 p 2 6 ]
+"22
+} 0
+"710 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_indicate_off led_indicate_off `(v  1 s 1 led_indicate_off ]
+{
+"715
+} 0
+"724
+[v _led_indicate_night led_indicate_night `(v  1 s 1 led_indicate_night ]
+{
+"729
+} 0
+"717
+[v _led_indicate_day led_indicate_day `(v  1 s 1 led_indicate_day ]
+{
+"722
+} 0
+"43 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eeprom.c
+[v _eeprom_read_buffer eeprom_read_buffer `(v  1 e 1 0 ]
+{
+[v eeprom_read_buffer@addr addr `uc  1 a 1 wreg ]
+"45
+[v eeprom_read_buffer@i i `uc  1 a 1 8 ]
+"43
+[v eeprom_read_buffer@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read_buffer@pbuf pbuf `*.39uc  1 p 2 3 ]
+[v eeprom_read_buffer@len len `uc  1 p 1 5 ]
+"45
+[v eeprom_read_buffer@addr addr `uc  1 a 1 7 ]
+"49
+} 0
+"24
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"26
+[v eeprom_read@addr addr `uc  1 a 1 2 ]
+"33
+} 0
+"167 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _ble_process ble_process `(v  1 e 1 0 ]
+{
+"178
+} 0
+"161
+[v _ble_receive_stop ble_receive_stop `(v  1 e 1 0 ]
+{
+"165
+} 0
+"144
+[v _ble_receive_start ble_receive_start `(v  1 e 1 0 ]
+{
+"150
+} 0
+"152
+[v _ble_receive_complete ble_receive_complete `(uc  1 e 1 0 ]
+{
+"159
+} 0
+"135
+[v _ble_ready_to_receive ble_ready_to_receive `(uc  1 e 1 0 ]
+{
+"142
+} 0
+"284
+[v _ble_decode ble_decode `(v  1 s 1 ble_decode ]
+{
+"432
+} 0
+"1899 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_stop_preview led_stop_preview `(v  1 e 1 0 ]
+{
+"1903
+} 0
+"1893
+[v _led_start_preview led_start_preview `(v  1 e 1 0 ]
+{
+"1897
+} 0
+"1862
+[v _led_start_flash led_start_flash `(v  1 e 1 0 ]
+{
+"1866
+} 0
+"2206
+[v _led_set_time led_set_time `(v  1 e 1 0 ]
+{
+[v led_set_time@ptime ptime `*.5DCuc  1 a 1 wreg ]
+[v led_set_time@ptime ptime `*.5DCuc  1 a 1 wreg ]
+"2208
+[v led_set_time@ptime ptime `*.5DCuc  1 a 1 7 ]
+"2225
+} 0
+"110 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _rtc_set rtc_set `(v  1 e 1 0 ]
+{
+[v rtc_set@ptime ptime `*.5DCuc  1 a 1 wreg ]
+"113
+[v rtc_set@i i `uc  1 a 1 3 ]
+"110
+[v rtc_set@ptime ptime `*.5DCuc  1 a 1 wreg ]
+"112
+[v rtc_set@ptime ptime `*.5DCuc  1 a 1 2 ]
+"118
+} 0
+"731 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_indicate_ble led_indicate_ble `(v  1 s 1 led_indicate_ble ]
+{
+"736
+} 0
+"2133
+[v _led_set_pro led_set_pro `(uc  1 e 1 0 ]
+{
+[v led_set_pro@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2140
+[v led_set_pro@i i `uc  1 a 1 15 ]
+"2139
+[v led_set_pro@len len `uc  1 a 1 13 ]
+"2133
+[v led_set_pro@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2139
+[v led_set_pro@pbuf pbuf `DC*.5DCuc  1 a 1 14 ]
+"2146
+} 0
+"2184
+[v _led_set_preview led_set_preview `(uc  1 e 1 0 ]
+{
+[v led_set_preview@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2196
+[v led_set_preview@val val `ui  1 a 2 5 ]
+"2194
+[v led_set_preview@i i `uc  1 a 1 7 ]
+"2184
+[v led_set_preview@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2186
+[v led_set_preview@pbuf pbuf `DC*.5DCuc  1 a 1 4 ]
+"2204
+} 0
+"2036
+[v _led_set_power led_set_power `(uc  1 e 1 0 ]
+{
+[v led_set_power@on on `uc  1 a 1 wreg ]
+[v led_set_power@on on `uc  1 a 1 wreg ]
+"2038
+[v led_set_power@on on `uc  1 a 1 7 ]
+"2068
+} 0
+"1993
+[v _led_set_mode led_set_mode `(uc  1 e 1 0 ]
+{
+[v led_set_mode@m m `uc  1 a 1 wreg ]
+[v led_set_mode@m m `uc  1 a 1 wreg ]
+"1995
+[v led_set_mode@m m `uc  1 a 1 8 ]
+"2034
+} 0
+"675
+[v _led_turnon_ramp led_turnon_ramp `(v  1 s 1 led_turnon_ramp ]
+{
+"677
+[v led_turnon_ramp@i i `uc  1 a 1 6 ]
+"681
+} 0
+"683
+[v _led_turnoff_ramp led_turnoff_ramp `(v  1 s 1 led_turnoff_ramp ]
+{
+"685
+[v led_turnoff_ramp@i i `uc  1 a 1 2 ]
+"689
+} 0
+"2118
+[v _led_set_cycle led_set_cycle `(uc  1 e 1 0 ]
+{
+[v led_set_cycle@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2125
+[v led_set_cycle@i i `uc  1 a 1 12 ]
+"2124
+[v led_set_cycle@len len `uc  1 a 1 10 ]
+"2118
+[v led_set_cycle@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2124
+[v led_set_cycle@pbuf pbuf `DC*.5DCuc  1 a 1 11 ]
+"2131
+} 0
+"2094
+[v _led_set_custom led_set_custom `(uc  1 e 1 0 ]
+{
+[v led_set_custom@idx idx `uc  1 a 1 wreg ]
+"2108
+[v led_set_custom@i i `uc  1 a 1 23 ]
+"2094
+[v led_set_custom@idx idx `uc  1 a 1 wreg ]
+"2106
+[v led_set_custom@idx idx `uc  1 a 1 22 ]
+"2116
+} 0
+"15 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"31
+} 0
+"2070 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_set_bright led_set_bright `(uc  1 e 1 0 ]
+{
+[v led_set_bright@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2083
+[v led_set_bright@val val `ui  1 a 2 7 ]
+"2081
+[v led_set_bright@i i `uc  1 a 1 9 ]
+"2070
+[v led_set_bright@pbuf pbuf `DC*.5DCuc  1 a 1 wreg ]
+"2072
+[v led_set_bright@pbuf pbuf `DC*.5DCuc  1 a 1 6 ]
+"2092
+} 0
+"2148
+[v _led_increase led_increase `(uc  1 e 1 0 ]
+{
+[v led_increase@chn chn `uc  1 a 1 wreg ]
+[v led_increase@chn chn `uc  1 a 1 wreg ]
+[v led_increase@delt delt `uc  1 p 1 11 ]
+"2150
+[v led_increase@chn chn `uc  1 a 1 16 ]
+"2164
+} 0
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_util.c
+[v _increase increase `(v  1 e 1 0 ]
+{
+[v increase@psrc psrc `DC*.39ui  1 p 2 2 ]
+[v increase@delt delt `DCuc  1 p 1 4 ]
+[v increase@max max `DCui  1 p 2 5 ]
+"13
+} 0
+"2166 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_decrease led_decrease `(uc  1 e 1 0 ]
+{
+[v led_decrease@chn chn `uc  1 a 1 wreg ]
+[v led_decrease@chn chn `uc  1 a 1 wreg ]
+[v led_decrease@delt delt `uc  1 p 1 11 ]
+"2168
+[v led_decrease@chn chn `uc  1 a 1 16 ]
+"2182
+} 0
+"1919
+[v _led_prepare_to_save led_prepare_to_save `(v  1 s 1 led_prepare_to_save ]
+{
+"1923
+} 0
+"15 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_util.c
+[v _decrease decrease `(v  1 e 1 0 ]
+{
+[v decrease@psrc psrc `DC*.39ui  1 p 2 2 ]
+[v decrease@delt delt `DCuc  1 p 1 4 ]
+[v decrease@min min `DCui  1 p 2 5 ]
+"25
+} 0
+"204 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _ble_send_data ble_send_data `(v  1 s 1 ble_send_data ]
+{
+[s S625 . 32 `uc 1 mOn 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+`uc 1 mDyn 1 1 `[5]ui 1 mBright 10 2 `[4][5]uc 1 mCustomBright 20 12 ]
+"209
+[u S631 . 32 `S625 1 . 32 0 `[32]uc 1 array 32 0 ]
+[s S634 . 21 `uc 1 sunrise_start_hour 1 0 `uc 1 sunrise_start_minute 1 1 `uc 1 sunrise_end_hour 1 2 `uc 1 sunrise_end_minute 1 3 `[5]uc 1 day_bright 5 4 `uc 1 sunset_start_hour 1 9 `uc 1 sunset_start_minute 1 10 `uc 1 sunset_end_hour 1 11 `uc 1 sunset_end_minute 1 12 `[5]uc 1 night_bright 5 13 `uc 1 turnoff_enabled 1 18 `uc 1 turnoff_hour 1 19 `uc 1 turnoff_minute 1 20 ]
+[u S648 . 21 `S634 1 . 21 0 `[21]uc 1 array 21 0 ]
+[s S651 . 7 `uc 1 hour 1 0 `uc 1 minuite 1 1 `[5]uc 1 bright 5 2 ]
+[s S655 . 71 `uc 1 point_count 1 0 `[10]S651 1 points 70 1 ]
+[u S658 . 71 `S655 1 . 71 0 `[71]uc 1 array 71 0 ]
+[s S661 . 125 `uc 1 mMode 1 0 :2:0 
+`uc 1 . 1 0 :6:2 
+`S631 1 manual_para 32 1 `S648 1 auto_para 21 33 `S658 1 pro_para 71 54 ]
+[v ble_send_data@p p `*.39S661  1 a 2 12 ]
+"206
+[v ble_send_data@i i `uc  1 a 1 11 ]
+"207
+[v ble_send_data@len len `uc  1 a 1 10 ]
+"208
+[v ble_send_data@xor xor `uc  1 a 1 9 ]
+"260
+} 0
+"4 D:\Program Files\Microchip\xc8\v1.45\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 3 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 2 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 4 ]
+"51
+} 0
+"262 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _ble_ota_ack ble_ota_ack `(v  1 s 1 ble_ota_ack ]
+{
+"271
+} 0
+"128
+[v _ble_transmit_stop ble_transmit_stop `(v  1 s 1 ble_transmit_stop ]
+{
+"133
+} 0
+"122
+[v _ble_transmit_start ble_transmit_start `(v  1 s 1 ble_transmit_start ]
+{
+"126
+} 0
+"180
+[v _ble_init ble_init `(v  1 e 1 0 ]
+{
+"202
+} 0
+"85
+[v _ble_check_devid ble_check_devid `(uc  1 s 1 ble_check_devid ]
+{
+"87
+[v ble_check_devid@dev dev `[17]uc  1 a 17 23 ]
+"90
+[v ble_check_devid@cnt cnt `ui  1 a 2 40 ]
+"89
+[v ble_check_devid@idx idx `uc  1 a 1 44 ]
+"91
+[v ble_check_devid@rev rev `uc  1 a 1 43 ]
+"88
+[v ble_check_devid@len len `uc  1 a 1 42 ]
+"86
+[v ble_check_devid@F8342 F8342 `[17]uc  1 s 17 F8342 ]
+"120
+} 0
+"44
+[v _ble_send_cmd ble_send_cmd `(uc  1 s 1 ble_send_cmd ]
+{
+"46
+[v ble_send_cmd@ack ack `[8]uc  1 a 8 10 ]
+"48
+[v ble_send_cmd@idx idx `uc  1 a 1 21 ]
+"50
+[v ble_send_cmd@rev rev `uc  1 a 1 20 ]
+"49
+[v ble_send_cmd@cnt cnt `uc  1 a 1 19 ]
+"47
+[v ble_send_cmd@len len `uc  1 a 1 18 ]
+"44
+[v ble_send_cmd@cmd cmd `*.25DCuc  1 p 2 7 ]
+"45
+[v ble_send_cmd@F8334 F8334 `[8]uc  1 s 8 F8334 ]
+"83
+} 0
+"4 D:\Program Files\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"6
+[v strlen@cp cp `*.4DCuc  1 a 1 5 ]
+"4
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"8
+[v strlen@s s `*.4DCuc  1 a 1 6 ]
+"13
+} 0
+"30 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eusart.c
+[v _eusart_write eusart_write `(uc  1 e 1 0 ]
+{
+[v eusart_write@byte byte `uc  1 a 1 wreg ]
+[v eusart_write@byte byte `uc  1 a 1 wreg ]
+[v eusart_write@byte byte `uc  1 a 1 2 ]
+"50
+} 0
+"109 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _app_init app_init `(v  1 e 1 0 ]
+{
+"127
+} 0
+"38 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_tmr.c
+[v _tmr2_init tmr2_init `(v  1 e 1 0 ]
+{
+[v tmr2_init@cb cb `*.37(v  1 p 2 2 ]
+"56
+} 0
+"6
+[v _tmr0_init tmr0_init `(v  1 e 1 0 ]
+{
+[v tmr0_init@cb cb `*.37(v  1 p 2 2 ]
+"27
+} 0
+"91 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_pwm.c
+[v _pwm5_init pwm5_init `(v  1 e 1 0 ]
+{
+"97
+} 0
+"69
+[v _pwm4_init pwm4_init `(v  1 e 1 0 ]
+{
+"82
+} 0
+"47
+[v _pwm3_init pwm3_init `(v  1 e 1 0 ]
+{
+"60
+} 0
+"25
+[v _pwm2_init pwm2_init `(v  1 e 1 0 ]
+{
+"38
+} 0
+"3
+[v _pwm1_init pwm1_init `(v  1 e 1 0 ]
+{
+"16
+} 0
+"23 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _osc_init osc_init `(v  1 e 1 0 ]
+{
+"36
+} 0
+"5 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_key.c
+[v _key_init key_init `(v  1 e 1 0 ]
+{
+[v key_init@cb cb `*.37(v  1 p 2 2 ]
+"8
+} 0
+"38 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _gpio_init gpio_init `(v  1 e 1 0 ]
+{
+"90
+} 0
+"12 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eusart.c
+[v _eusart_init eusart_init `(v  1 e 1 0 ]
+{
+[v eusart_init@cb cb `*.37(v  1 p 2 2 ]
+"28
+} 0
+"129 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _app_isr app_isr `II(v  1 e 1 0 ]
+{
+"147
+} 0
+"58 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_tmr.c
+[v _tmr2_isr tmr2_isr `(v  1 e 1 0 ]
+{
+"65
+} 0
+"92 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_main.c
+[v _tmr2_isr_callback tmr2_isr_callback `(v  1 e 1 0 ]
+{
+"94
+[v tmr2_isr_callback@cnt cnt `uc  1 s 1 cnt ]
+"107
+} 0
+"497 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_process led_process `(v  1 e 1 0 ]
+{
+"511
+} 0
+"477
+[v _led_ramp led_ramp `(v  1 e 1 0 ]
+{
+"479
+[v led_ramp@i i `uc  1 a 1 10 ]
+"495
+} 0
+"84 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_pwm.c
+[v _pwm4_load_duty pwm4_load_duty `(v  1 e 1 0 ]
+{
+[v pwm4_load_duty@value value `ui  1 p 2 0 ]
+"89
+} 0
+"62
+[v _pwm3_load_duty pwm3_load_duty `(v  1 e 1 0 ]
+{
+[v pwm3_load_duty@value value `ui  1 p 2 0 ]
+"67
+} 0
+"40
+[v _pwm2_load_duty pwm2_load_duty `(v  1 e 1 0 ]
+{
+[v pwm2_load_duty@value value `ui  1 p 2 0 ]
+"45
+} 0
+"18
+[v _pwm1_load_duty pwm1_load_duty `(v  1 e 1 0 ]
+{
+[v pwm1_load_duty@value value `ui  1 p 2 0 ]
+"23
+} 0
+"99
+[v _pwm5_load_duty pwm5_load_duty `(v  1 e 1 0 ]
+{
+[v pwm5_load_duty@value value `ui  1 p 2 0 ]
+"104
+} 0
+"28 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_key.c
+[v _key_scan key_scan `(v  1 e 1 0 ]
+{
+"32
+[v key_scan@key_value key_value `uc  1 a 1 1 ]
+"30
+[v key_scan@last_key last_key `uc  1 s 1 last_key ]
+"31
+[v key_scan@repeat repeat `uc  1 s 1 repeat ]
+"69
+} 0
+"10
+[v _key_read key_read `(uc  1 s 1 key_read ]
+{
+"14
+[v key_read@dat dat `uc  1 a 1 0 ]
+"12
+[v key_read@trg trg `uc  1 s 1 trg ]
+"13
+[v key_read@cont cont `uc  1 s 1 cont ]
+"18
+} 0
+"20
+[v _key_action key_action `(v  1 s 1 key_action ]
+{
+[v key_action@key key `uc  1 a 1 wreg ]
+[v key_action@key key `uc  1 a 1 wreg ]
+[v key_action@state state `E8166  1 p 1 13 ]
+"22
+[v key_action@key key `uc  1 a 1 0 ]
+"26
+} 0
+"997 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_touch_cb led_touch_cb `(v  1 e 1 0 ]
+{
+[v led_touch_cb@key key `uc  1 p 1 11 ]
+[v led_touch_cb@state state `E8242  1 p 1 12 ]
+"1000
+} 0
+"974
+[v _led_state_ble_cb led_state_ble_cb `(v  1 s 1 led_state_ble_cb ]
+{
+[v led_state_ble_cb@key key `uc  1 p 1 9 ]
+[v led_state_ble_cb@state state `E8242  1 p 1 10 ]
+"995
+} 0
+"935
+[v _led_state_night_cb led_state_night_cb `(v  1 s 1 led_state_night_cb ]
+{
+[v led_state_night_cb@key key `uc  1 p 1 9 ]
+[v led_state_night_cb@state state `E8242  1 p 1 10 ]
+"956
+} 0
+"871
+[v _led_state_day_cb led_state_day_cb `(v  1 s 1 led_state_day_cb ]
+{
+[v led_state_day_cb@key key `uc  1 p 1 9 ]
+[v led_state_day_cb@state state `E8242  1 p 1 10 ]
+"893
+} 0
+"814
+[v _led_state_off_cb led_state_off_cb `(v  1 s 1 led_state_off_cb ]
+{
+[v led_state_off_cb@key key `uc  1 p 1 9 ]
+[v led_state_off_cb@state state `E8242  1 p 1 10 ]
+"836
+} 0
+"793
+[v _led_state_off_short_press_cb led_state_off_short_press_cb `(v  1 s 1 led_state_off_short_press_cb ]
+{
+"799
+} 0
+"812
+[v _led_state_off_release_cb led_state_off_release_cb `(v  1 s 1 led_state_off_release_cb ]
+{
+} 0
+"801
+[v _led_state_off_long_press_cb led_state_off_long_press_cb `(v  1 s 1 led_state_off_long_press_cb ]
+{
+"808
+} 0
+"717
+[v i1_led_indicate_day led_indicate_day `(v  1 s 1 i1_led_indicate_day ]
+{
+"722
+} 0
+"810
+[v _led_state_off_cont_press_cb led_state_off_cont_press_cb `(v  1 s 1 led_state_off_cont_press_cb ]
+{
+} 0
+"897
+[v _led_state_night_short_press_cb led_state_night_short_press_cb `(v  1 s 1 led_state_night_short_press_cb ]
+{
+"910
+} 0
+"731
+[v i1_led_indicate_ble led_indicate_ble `(v  1 s 1 i1_led_indicate_ble ]
+{
+"736
+} 0
+"930
+[v _led_state_night_release_cb led_state_night_release_cb `(v  1 s 1 led_state_night_release_cb ]
+{
+"933
+} 0
+"912
+[v _led_state_night_long_press_cb led_state_night_long_press_cb `(v  1 s 1 led_state_night_long_press_cb ]
+{
+"915
+} 0
+"779
+[v _led_update_night_status led_update_night_status `(v  1 s 1 led_update_night_status ]
+{
+"789
+} 0
+"917
+[v _led_state_night_cont_press_cb led_state_night_cont_press_cb `(v  1 s 1 led_state_night_cont_press_cb ]
+{
+"928
+} 0
+"840
+[v _led_state_day_short_press_cb led_state_day_short_press_cb `(v  1 s 1 led_state_day_short_press_cb ]
+{
+"846
+} 0
+"760
+[v i1_led_update_night_bright led_update_night_bright `(v  1 s 1 i1_led_update_night_bright ]
+{
+[v i1led_update_night_bright@i led_update_night_bright `uc  1 a 1 4 ]
+"777
+} 0
+"724
+[v i1_led_indicate_night led_indicate_night `(v  1 s 1 i1_led_indicate_night ]
+{
+"729
+} 0
+"866
+[v _led_state_day_release_cb led_state_day_release_cb `(v  1 s 1 led_state_day_release_cb ]
+{
+"869
+} 0
+"848
+[v _led_state_day_long_press_cb led_state_day_long_press_cb `(v  1 s 1 led_state_day_long_press_cb ]
+{
+"851
+} 0
+"748
+[v _led_update_day_status led_update_day_status `(v  1 s 1 led_update_day_status ]
+{
+"758
+} 0
+"853
+[v _led_state_day_cont_press_cb led_state_day_cont_press_cb `(v  1 s 1 led_state_day_cont_press_cb ]
+{
+"864
+} 0
+"738
+[v i1_led_update_day_bright led_update_day_bright `(v  1 s 1 i1_led_update_day_bright ]
+{
+[v i1led_update_day_bright@i led_update_day_bright `uc  1 a 1 4 ]
+"746
+} 0
+"3 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_util.c
+[v i1_increase increase `(v  1 e 1 0 ]
+{
+[v i1increase@psrc psrc `DC*.39ui  1 p 2 0 ]
+[v i1increase@delt delt `DCuc  1 p 1 2 ]
+[v i1increase@max max `DCui  1 p 2 3 ]
+"13
+} 0
+"15
+[v i1_decrease decrease `(v  1 e 1 0 ]
+{
+[v i1decrease@psrc psrc `DC*.39ui  1 p 2 0 ]
+[v i1decrease@delt delt `DCuc  1 p 1 2 ]
+[v i1decrease@min min `DCui  1 p 2 3 ]
+"25
+} 0
+"960 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_led.c
+[v _led_state_ble_short_press_cb led_state_ble_short_press_cb `(v  1 s 1 led_state_ble_short_press_cb ]
+{
+"966
+} 0
+"700
+[v i1_led_turnoff led_turnoff `(v  1 s 1 i1_led_turnoff ]
+{
+[v i1led_turnoff@i led_turnoff `uc  1 a 1 0 ]
+"707
+} 0
+"1919
+[v i1_led_prepare_to_save led_prepare_to_save `(v  1 s 1 i1_led_prepare_to_save ]
+{
+"1923
+} 0
+"710
+[v i1_led_indicate_off led_indicate_off `(v  1 s 1 i1_led_indicate_off ]
+{
+"715
+} 0
+"972
+[v _led_state_ble_release_cb led_state_ble_release_cb `(v  1 s 1 led_state_ble_release_cb ]
+{
+} 0
+"968
+[v _led_state_ble_long_press_cb led_state_ble_long_press_cb `(v  1 s 1 led_state_ble_long_press_cb ]
+{
+} 0
+"970
+[v _led_state_ble_cont_press_cb led_state_ble_cont_press_cb `(v  1 s 1 led_state_ble_cont_press_cb ]
+{
+} 0
+"29 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_tmr.c
+[v _tmr0_isr tmr0_isr `(v  1 e 1 0 ]
+{
+"36
+} 0
+"52 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_rtc.c
+[v _rtc_process rtc_process `(v  1 e 1 0 ]
+{
+"98
+} 0
+"22
+[v _rtc_is_leap_year rtc_is_leap_year `(uc  1 s 1 rtc_is_leap_year ]
+{
+[v rtc_is_leap_year@year year `ui  1 p 2 5 ]
+"39
+} 0
+"6 D:\Program Files\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"26
+} 0
+"52 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/drv_eusart.c
+[v _eusart_transmit_isr eusart_transmit_isr `(v  1 e 1 0 ]
+{
+"67
+} 0
+"69
+[v _eusart_receive_isr eusart_receive_isr `(v  1 e 1 0 ]
+{
+"76
+[v eusart_receive_isr@rcv rcv `uc  1 a 1 1 ]
+"81
+} 0
+"273 E:\MPLABXProjects\PIC16F18345\FluvalBLE_Pro.X\src/app_ble.c
+[v _ble_receive ble_receive `(v  1 e 1 0 ]
+{
+[v ble_receive@rcv rcv `uc  1 p 1 0 ]
+"282
+} 0
